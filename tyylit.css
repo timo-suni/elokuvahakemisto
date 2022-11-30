@@ -1,0 +1,103 @@
+body{
+    width: 100%;
+    margin: auto;
+    color: white;
+    background-color: slategray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header{
+    margin: auto;
+    width: 800px;
+    height: 120px;
+    border: 3px solid teal;
+    border-bottom: 0;
+    background-image: linear-gradient(rgb(46, 46, 46), rgb(84, 84, 84));
+}
+h1{
+    text-align: center;
+    color: white;
+}
+h3{
+    margin: 0;
+}
+.content{
+    margin: auto;
+    width: 800px;
+    min-height: 800px;
+    height: fit-content;
+    border: 3px solid teal;
+    border-top: 0;
+    background-image: linear-gradient(rgb(84, 84, 84), rgb(46, 46, 46));
+}
+.leftside{
+    float: left;
+    width: 210px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgb(179, 179, 179);
+}
+.haku{
+    width: fit-content;
+    padding: 10px;
+}
+.hakuhead{
+    width: 535px;
+    float: right;
+    padding: 10px;
+}
+.lisays{
+    width: fit-content;
+    padding: 10px;
+}
+label{
+    line-height: 25px;
+}
+input{
+    width: 180px;
+    border-radius: 25px;
+    outline: 0;
+    padding-left: 10px;
+}
+select{
+    width: 196px;
+    border-radius: 25px;
+    outline: 0;
+    padding-left: 10px;
+}
+#hakuNappi{
+    width: 65px;
+    height: 25px;
+    border-radius: 5px;
+    outline: 0;
+}
+#hakuKaikkiNappi{
+    width: 95px;
+    height: 25px;
+    border-radius: 5px;
+    outline: 0;
+}
+#lisaaNappi{
+    width: 65px;
+    height: 25px;
+    border-radius: 5px;
+    outline: 0;
+}
+.hakucontainer{
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 300px 200px;
+    grid-template-rows: auto
+}
+.kuvatulokset{
+    grid-column: 2;
+    width: 150px;
+    padding: 10px;
+}
+.hakutulokset{
+    grid-column: 1;
+    padding: 10px;
+    font-size: 22px;
+    
+}

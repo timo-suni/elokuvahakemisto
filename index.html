@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="koodit.js"></script>
+    <link rel="stylesheet" href="tyylit.css">
+    <title>Elokuvat</title>
+</head>
+<body>
+    <div class="header">
+        <br>
+        <h1>Elokuvahakemisto</h1>
+    </div>
+    <div class="content">
+        <div class="leftside">
+            <div class="haku">
+                <h3>Haku</h3>
+                <form>
+                    <label for="hakunimi">Nimi: </label><br>
+                    <input id="hakunimi" type="text"><br>
+                    <label for="hakuohjaaja">Ohjaaja: </label><br>
+                    <input id="hakuohjaaja" type="text"><br>
+                    <label for="hakujulkaisuvuosi">Julkaisuvuosi: </label><br>
+                    <input id="hakujulkaisuvuosi"type="text"><br>
+                    <label for="hakukategoria">Kategoria: </label><br>
+                    <select id="hakukategoria" name="kategoria">
+                        <option value="">Valitse...</option>
+                        <option value="kauhu">Kauhu</option>
+                        <option value="komedia">Komedia</option>
+                        <option value="scifi">Scifi</option>
+                        <option value="draama">Draama</option>
+                        <option value="rikos">Rikos</option>
+                        <option value="animaatio">Animaatio</option>
+                        <option value="toiminta">Toiminta</option>
+                        <option value="rikos">Rikos</option>
+                        <option value="jannitys">Jännitys</option>
+                        <option value="rakkaus">Rakkaus</option>
+                    </select><br>
+                    <label for="hakutahdet">Tähdet: </label><br>
+                    <select id="hakutahdet" type="number">
+                        <option value="">Valitse...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br>
+                    <br>
+                    <button id="hakuNappi" type="button" onclick="hae();">Hae</button>
+                    <button id="hakuKaikkiNappi" type="button" onclick="haeKaikki();">Hae kaikki</button>
+                </form>
+            </div>
+            <div class="lisays">
+                <form>
+                    <h3>Lisää</h3>
+                    <label for="nimi">Nimi: </label><br>
+                    <input id="nimi" type="text"><br>
+                    <label for="ohjaaja">Ohjaaja: </label><br>
+                    <input id="ohjaaja" type="text"><br>
+                    <label for="julkaisuvuosi">Julkaisuvuosi: </label><br>
+                    <input id="julkaisuvuosi"type="number"><br>
+                    <label for="kategoria">Kategoria: </label><br>
+                    <select id="kategoria" name="kategoria">
+                        <option value="">Valitse...</option>
+                        <option value="kauhu">Kauhu</option>
+                        <option value="komedia">Komedia</option>
+                        <option value="scifi">Scifi</option>
+                        <option value="draama">Draama</option>
+                        <option value="rikos">Rikos</option>
+                        <option value="animaatio">Animaatio</option>
+                        <option value="toiminta">Toiminta</option>
+                        <option value="rikos">Rikos</option>
+                        <option value="jannitys">Jännitys</option>
+                        <option value="jannitys">Animaatio</option>
+                    </select><br>
+                    <label for="tahdet">Tähdet: </label>
+                    <select id="tahdet" type="number">
+                        <option value="">Valitse...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br>
+                    <label for="juliste">Julistekuvan nimi: </label><br>
+                    <input id="juliste" type="text"><br>
+                    <br>
+                    <button id="lisaaNappi" type="button" onclick="lisaaElokuva();">Lisää</button>
+                </form>
+            </div>
+        </div>
+        <div class="hakuhead">
+            <h3>Hakutulokset:</h3>
+        </div>
+        <div class="hakucontainer">
+            <div class="hakutulokset" id="tulostusAlue"></div>
+            <div class="kuvatulokset" id="kuvaAlue"></div>
+        </div>
+    </div>
+    </body>
+</html>
